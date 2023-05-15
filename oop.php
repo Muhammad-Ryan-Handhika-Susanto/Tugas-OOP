@@ -43,5 +43,19 @@ class mahasiswa {
         echo "JURUSAN : " . $this->jurusan;
     }
 }    
-$mahasiswa1 = new mahasiswa('190106', 'Muhammad Ryan Handhika Susanto', 'RPL');
+$mahasiswa1 = new mahasiswa($_POST['nim'],$_POST['nama'],$_POST['jurusan']);
 $mahasiswa1->tampil_biodata();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="form.php">kembali</a>
+</body>
+</html>
